@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* body fixed to cover the whole window */
 body{
   width: 100vw;
   height: 100vh;
@@ -11,11 +12,12 @@ body{
   align-items: center;
   font-family: 'Press Start 2P', cursive;
 }
+/* header margins */
 h1{
   margin-bottom: 5vh;
   margin-top: 3vh;
 }
-
+/* form part */
 form {
   padding: 20px 50px;
 }
@@ -25,25 +27,21 @@ form input:first-child , form input:last-child{
   padding: 2px;
   font-family: 'Press Start 2P', cursive;
 }
-
 form input:first-child::placeholder {
   padding-left: 4px;
 }
-
-button{
-  font-family: 'Press Start 2P', cursive;
-}
-button:first-child{
-  margin-left: 20px;
-  margin-right: 10px;
-}
-form input:last-child{
-  width: 60px;
-  padding: 2px;
-}
 form input:last-child:hover{
-transition: 0.3s;
+  transition: 0.3s;
 }
+  form input:last-child{
+    width: 60px;
+    padding: 2px;
+}
+
+form input:focus{
+  outline: var(--dark-mode-input-border-color) solid 2px;
+}
+/* list */
 ul{
   list-style: none;
 }
@@ -56,8 +54,18 @@ ul li{
   padding: 2px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid;
 }
 .done {
   text-decoration: line-through;
-  color: orange;
+  text-decoration-thickness: 3px;
+}
+/* buttons */
+button{
+  font-family: 'Press Start 2P', cursive;
+  padding: 3px;
+}
+button:first-child{
+  margin-left: 20px;
+  margin-right: 10px;
 }

@@ -1,0 +1,28 @@
+.body-dark{
+  background-color: var(--dark-mode-body);
+}
+.header-dark{
+  color: var(--dark-mode-header-color);
+  text-shadow:  2px 2px var(--dark-mode-header-shadow-color);
+}
+.li-dark{
+  background-color: var(--dark-mode-task-bg-color);
+  color: var(--dark-mode-task-text-color);
+  border-bottom: 2px solid var(--dark-mode-task-broder-color);
+}
+.input-dark{
+  background-color: var(--dark-mode-input-bg);
+  color: var(--dark-mode-input-text-color);
+  border: 2px solid var(--dark-mode-input-border-color)
+}
+.input-dark::placeholder{
+  color: var(--dark-mode-input-text-color);
+}
+.input-dark:focus{
+  border: none;
+}
+.btn-dark{
+  background-color: var(--dark-mode-button-bg);
+  color: var(--dark-mode-button-text-color);
+  border: 2px solid var(--dark-mode-button-border-color);
+}

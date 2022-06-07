@@ -1,7 +1,14 @@
 :root {
   --dark-mode-body: 	#131313;
-  --dark-mode-header-color: #3ead63;
-  --dark-mode-header-shadow-color: #67ec6c7e;
-  --dark-mode-task-bg-color: rgb(27, 90, 22);
-  --dark-mode-task-text-color: #FFF;
+  --dark-mode-header-color: #1d422a;
+  --dark-mode-header-shadow-color: #377e3a;
+  --dark-mode-task-bg-color: #1d422a;
+  --dark-mode-task-text-color: #377e3a;
+  --dark-mode-task-broder-color:#377e3a;
+  --dark-mode-input-bg: #1d422a;
+  --dark-mode-input-text-color: #377e3a;
+  --dark-mode-input-border-color: #377e3a;
+  --dark-mode-button-bg: #131313;
+  --dark-mode-button-text-color: #377e3a;
+  --dark-mode-button-border:#377e3a;
 }

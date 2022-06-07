@@ -10,12 +10,15 @@ const addToDo = (e) => {
     let inputText = document.createTextNode(userInput);
     newListItem.appendChild(inputText);
     list.appendChild(newListItem);
+    newListItem.classList.add("li-dark")
     const btnContainer = document.createElement("div")
     const doneBtn = document.createElement("button");
     const delBtn = document.createElement("button");
     doneBtn.innerHTML = "Done";
     delBtn.innerHTML = "Delete";
-    newListItem.appendChild(btnContainer)
+    doneBtn.classList.add("btn-dark");
+    delBtn.classList.add("btn-dark");
+    newListItem.appendChild(btnContainer);
     btnContainer.appendChild(doneBtn);
     btnContainer.appendChild(delBtn);
     list.appendChild(newListItem);
