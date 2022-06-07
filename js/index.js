@@ -10,12 +10,21 @@ const addToDo = (e) => {
     let inputText = document.createTextNode(userInput);
     newListItem.appendChild(inputText);
     list.appendChild(newListItem);
-    newListItem.classList.add("dark")
+    const btnContainer = document.createElement("div")
+    const doneBtn = document.createElement("button");
+    const delBtn = document.createElement("button");
+    doneBtn.innerHTML = "Done";
+    delBtn.innerHTML = "Delete";
+    newListItem.appendChild(btnContainer)
+    btnContainer.appendChild(doneBtn);
+    btnContainer.appendChild(delBtn);
+    list.appendChild(newListItem);
+    delBtn.addEventListener("click", () => newListItem.remove());
+    doneBtn.addEventListener("click", () => newListItem.classList.add("done"));
     document.querySelector("#user-data").value = ""
   } else {
     document.querySelector("#user-data").placeholder =
     "Add your task here";
   }
 }
-
 document.querySelector("form").addEventListener("submit", addToDo);

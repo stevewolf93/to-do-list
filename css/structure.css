@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+}
+h1{
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+}
+
+form {
+  padding: 20px 50px;
+}
+form input:first-child , form input:last-child{
+  width: 350px;
+  height: 35px;
+  padding: 2px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+form input:first-child::placeholder {
+  padding-left: 4px;
+}
+
+button{
+  font-family: 'Press Start 2P', cursive;
+}
+button:first-child{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+form input:last-child{
+  width: 60px;
+  padding: 2px;
+}
+form input:last-child:hover{
+transition: 0.3s;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  height: 24px;
+  border-radius: 2px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  min-width: 450px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.done {
+  text-decoration: line-through;
+  color: orange;
+}

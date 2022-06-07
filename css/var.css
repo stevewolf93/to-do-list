@@ -1,7 +1,7 @@
 :root {
-  --dark-mode-body: 	#1b1b1b;
-  --dark-mode-font-color: 	#808080;
-  --dark-mode-accent-color: #ffa500;
-  --dark-mode-decent-color: #292929;
-  --dark-mode-highlight-color: #FFF;
+  --dark-mode-body: 	#131313;
+  --dark-mode-header-color: #3ead63;
+  --dark-mode-header-shadow-color: #67ec6c7e;
+  --dark-mode-task-bg-color: rgb(27, 90, 22);
+  --dark-mode-task-text-color: #FFF;
 }
